@@ -5,9 +5,7 @@
  * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 /**
  * Define the application's minimum supported PHP version as a constant so it can be referenced within the application.
  */

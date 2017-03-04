@@ -51,7 +51,7 @@ class DJClassifiedsViewItems extends JViewLegacy{
 		$model 	  	= $this->getModel();
 		$dispatcher	= JDispatcher::getInstance();
 		$config  	= JFactory::getConfig();
-                (JRequest::getVar('cid', 0, '', 'int')) ? :JRequest::setVar('cid','9');
+		
 		$cat_id	  = JRequest::getVar('cid', 0, '', 'int');
 		$uid	  = JRequest::getVar('uid', 0, '', 'int');
 		$se		  = JRequest::getVar('se', 0, '', 'int');

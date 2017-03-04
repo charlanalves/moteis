@@ -26,7 +26,7 @@ $backtotop = $this->params->get('backToTop', '1');
 
             <div id="jm-footer-right" class="pull-right span6">
                 <div id="jm-poweredby">
-                    <a href="http://www.joomla-monster.com" target="_blank" title="Joomla Templates">WStar Cash Back</a> by Real Software 2017
+                    <a href="http://www.joomla-monster.com" target="_blank" title="Joomla Templates">Joomla Templates</a> by Joomla-Monster.com
                 </div>
             </div>
         </div>
