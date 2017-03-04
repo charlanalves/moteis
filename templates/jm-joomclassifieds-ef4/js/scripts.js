@@ -161,7 +161,7 @@ jQuery(document).ready(function(){
 		
     if (searchModule.length > 0) {
 			if (searchModuleAdvanced.length > 0) {
-				searchTarget.addClass('advanced');
+				searchTarget.addClass('jm-advanced');
 			}
 			if (searchCategorysuffix.length > 0) {
 				//without category
