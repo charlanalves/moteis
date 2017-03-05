@@ -99,7 +99,7 @@ class DJClassifiedsControllerField extends JControllerLegacy {
 
 			$row->name=strtolower($row->name);
 			$row->name=str_ireplace(' ', '_', $row->name); 
-			$row->name=ereg_replace("[^a-z0-9_]", "", $row->name );
+			$row->name=preg_replace("[^a-z0-9_]", "", $row->name );
 		   	$name=$row->name;
 			$next_name=1;
 				$query = "SELECT count(id) FROM #__djcf_fields WHERE name='".$name."' ";

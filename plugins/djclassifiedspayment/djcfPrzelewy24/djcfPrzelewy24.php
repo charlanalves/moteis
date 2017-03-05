@@ -488,7 +488,7 @@ class przelewy24_ipn{
 		$res = false;
 		
 		foreach($T as $line){
-			$line = ereg_replace("[\n\r]","",$line);
+			$line = preg_replace("[\n\r]","",$line);
 			if($line != "RESULT" and !$res) continue;
 			if($res) $RET[] = $line;
 			else $res = true;
