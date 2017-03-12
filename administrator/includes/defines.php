@@ -12,10 +12,16 @@ defined('_JEXEC') or die;
 $parts = explode(DIRECTORY_SEPARATOR, JPATH_BASE);
 array_pop($parts);
 
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    $enviroment = 'dev';
+} else {
+    $enviroment = 'prod';
+}
+
 // Defines
 define('JPATH_ROOT',          implode(DIRECTORY_SEPARATOR, $parts));
 define('JPATH_SITE',          JPATH_ROOT);
-define('JPATH_CONFIGURATION', JPATH_ROOT);
+define('JPATH_CONFIGURATION', JPATH_ROOT . DIRECTORY_SEPARATOR .'c' . DIRECTORY_SEPARATOR .$enviroment);
 define('JPATH_ADMINISTRATOR', JPATH_ROOT . DIRECTORY_SEPARATOR . 'administrator');
 define('JPATH_LIBRARIES',     JPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries');
 define('JPATH_PLUGINS',       JPATH_ROOT . DIRECTORY_SEPARATOR . 'plugins');
