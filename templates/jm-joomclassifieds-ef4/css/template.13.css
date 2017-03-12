@@ -3460,7 +3460,7 @@ x:-o-prefocus,
 }
 
 #jm-header {
-    background: url("../images/bg.jpg");
+    background: url("../images/bg.jpg") !important;
     width: 100%;
     background-position: center center;    
     background-color: #000000;
